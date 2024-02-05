@@ -91,7 +91,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 Prepare the data to be used on a neural network model
 Step 1: Read the applicants_data.csv file into a Pandas DataFrame. Review the DataFrame, looking for categorical variables that will need to be encoded, as well as columns that could eventually define your features and target variables.
-Selection deleted
 # Read the applicants_data.csv file from the Resources folder into a Pandas DataFrame
 applicant_data_df = pd.read_csv(Path('./Resources/applicants_data.csv'))
 
@@ -189,7 +188,6 @@ Step 4: Add the original DataFrame’s numerical variables to the DataFrame cont
 
 Note To complete this step, you will employ the Pandas concat() function that was introduced earlier in this course.
 
-Selection deleted
 # Add the numerical variables from the original DataFrame to the one-hot encoding DataFrame
 encoded_df = pd.concat(
     [
@@ -216,7 +214,6 @@ APPLICATION_TYPE_T10	APPLICATION_TYPE_T12	APPLICATION_TYPE_T13	APPLICATION_TYPE_
 34299 rows × 117 columns
 
 Step 5: Using the preprocessed data, create the features (X) and target (y) datasets. The target dataset should be defined by the preprocessed DataFrame column “IS_SUCCESSFUL”. The remaining columns should define the features dataset.
-Selection deleted
 # Define the target set y using the IS_SUCCESSFUL column
 y = encoded_df['IS_SUCCESSFUL']
 
@@ -258,7 +255,6 @@ Step 6: Split the features and target sets into training and testing datasets.
 # Assign the function a random_state equal to 1
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 Step 7: Use scikit-learn's StandardScaler to scale the features data.
-Selection deleted
 # Create a StandardScaler instance
 scaler = StandardScaler()
 
@@ -483,7 +479,6 @@ hidden_nodes_layer3_A1 = (hidden_nodes_layer2_A1 + 1) // 2
 # Review the number hidden nodes in the second layer
 hidden_nodes_layer3_A1
 15
-Selection deleted
 # Create the Sequential model instance
 nn_A1 = Sequential()
 # First hidden layer
@@ -813,5 +808,3 @@ Simple
 0
 20
 Python 3 (ipykernel) | Idle
-0
-venture_funding_with_deep_learnin
